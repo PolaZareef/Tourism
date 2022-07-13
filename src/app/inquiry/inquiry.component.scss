@@ -1,0 +1,96 @@
+  .bg {
+    background-image: url("passport-ap-ml-211227_1640614383709_hpMain_16x9_992.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    background-attachment: fixed;
+  }
+  .gg{
+    width: 99%;
+  }
+  .firh1{
+    text-align: center;
+    height: 700px;
+    padding-top: 300px;
+    font-size: 80px;
+    color: white;
+    font-weight: bold;
+  }
+  .secdiv{
+    text-align: center;
+    margin-top: 100px;
+    h1{
+        font-size: 50px;
+        font-weight: bold;
+    }
+    p{
+        font-size: 30px;
+    }
+  }
+  .fircol{
+    text-align: center;
+    margin-top: 40px;
+    p{
+        font-size: 30px;
+    }
+  }
+  .ss{
+    font-size: 70px;
+    color: #c54e0f;
+  }
+  .form-row{
+    label{
+        font-size: 30px;
+    }
+  }
+  .form-control{
+    height: 60px;
+    border-radius: 20px;
+    font-size: 23px;
+  }
+.btn{
+    width: 66%;
+    margin-left: 4px;
+    height: 60px;
+    border-radius: 20px;
+    font-size: 30px;
+    background-color: #c54e0f;
+}
+.seccol{
+    margin-bottom: 100px;
+}
+.btn:hover{
+    background-color: #f56111;
+}
+.container-flow{
+    margin-top: 100px;
+    margin-left: 100px;
+}
+.secicon{
+    margin-right: 9px;
+}
+
+  @media only screen and (max-width: 600px) {
+    .firh1{
+        font-size: 50px;
+    }
+    .secdiv{
+        h1{
+            font-size: 30px;
+        }
+        p{
+            font-size: 20px;
+        }
+      }
+      .fircol{
+        margin-right: 90px;
+      }
+      .seccol{
+        margin-right: 300px;
+        margin-top: 50px;
+      }
+      .btn{
+        width: 300px;
+      }
+  }

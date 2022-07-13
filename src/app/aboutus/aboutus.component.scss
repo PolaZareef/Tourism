@@ -1,0 +1,147 @@
+.bg {
+    background-image: url("SA.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: fill;
+    background-attachment: fixed;
+  }
+  .bg1 {
+    background-image: url("SA.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    margin-top: 100px;
+  }
+  .firh1{
+    text-align: center;
+    height: 700px;
+    padding-top: 300px;
+    font-size: 80px;
+    color: white;
+    font-weight: bold;
+  }
+  .sec{
+    margin-left: 80px;
+    h2{
+        margin-top: 50px;
+        font-size: 40px;
+    }
+  }
+  .ic{
+    font-size: 100px;
+  }
+  .firh2{
+    text-align: center;
+    height: 700px;
+    padding-top: 200px;
+    color: white;
+    font-weight: bold;
+    h1{
+        font-size: 70px;
+        font-weight: bold;
+    }
+    p{
+        font-size: 50px;
+        font-weight: normal;
+    }
+  }
+  .container-flow{
+    margin-top: 100px;
+  }
+  .fircol{
+    text-align: center;
+  }
+  .seccol{
+    h1{
+        font-size: 70px;
+        margin-bottom: 50px;
+    }
+    p{
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+  }
+  .img1{
+    width: 300px;
+    object-fit: contain;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
+
+  }
+  .img2{
+    margin-top: 200px;
+    width: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
+
+  }
+  .all{
+    width: 99%;
+  }
+  .btn{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #c54e0f;
+    border: 0px;
+  }
+  .btn:hover{
+    background-color: #fd6d1f;
+  }
+  @media only screen and (max-width: 600px) {
+    .firh1{
+        font-size: 50px;
+    }
+    .img1{
+        width: 300px;
+        height: 400px;
+        box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.8), 0 0px 0px 0 rgba(0, 0, 0, 0.8);
+    }
+    .img2{
+        width: 300px;
+        margin-top: 5px;
+    }
+    .seccol{
+        h1{
+            font-size: 50px;
+            margin-left: 10px;
+            margin-top: 50px;
+        }
+        p{
+            font-size: 18px;
+            margin-bottom: 30px;
+            margin-left: 20px;
+        }
+        button{
+            margin-left: 20px;
+        }
+      }
+      .sec{
+        margin-top: 80px;
+        margin-right: 70px;
+        h2{
+            font-size: 20px;
+            margin-top: 10px;
+        }
+      }
+      .ic{
+        font-size:30px;
+      }
+      .firh2{
+        text-align: center;
+        height: 700px;
+        color: white;
+        padding-top: 80px;
+        font-weight: bold;
+        h1{
+            font-size: 30px;
+            font-weight: bold;
+        }
+        p{
+            font-size: 10px;
+            font-weight: normal;
+        }
+      }
+  }
