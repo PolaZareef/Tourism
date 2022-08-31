@@ -1,0 +1,156 @@
+.bg {
+    background-image: url("SA_hero.max-1000x1000.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: fill;
+    background-attachment: fixed;
+    .div{
+        height: 800px;
+        padding-top: 300px;
+        padding-left: 200px;
+    }
+    .divv{
+        animation: fadeIn ease-out 1s;
+
+    }
+    .h11,.secp{
+        font-size: 50px;
+        color: white;
+    }
+    .firp{
+        font-size: 80px;
+        color: white;
+        font-weight: bold;
+    }
+  }
+  .img{
+    width: 80%;
+  }
+  .img:hover{
+    cursor: pointer;
+  }
+  .ss{
+    padding-left: 100px;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    h1{
+        text-align: center;
+        padding-bottom: 50px;
+        font-size: 70px;
+        font-weight: bold;
+        padding-right: 100px;
+    }
+    p{
+        padding-top: 20px;
+        font-size: 40px;
+    }
+  }
+  .Partners{
+    text-align: center;
+    img{
+        width: 400px;
+    }
+  }
+  .all{
+    width: 99%;
+  }
+  .secdiv{
+    h1{
+        text-align: center;
+        font-size: 70px;
+        font-weight: bold;
+    }
+  }
+.header-grid {
+    width: 100%;
+    height: 100vh;
+    gap: 12px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: 
+    "big-top big-top big-top small-top small-top"
+    "small-middle small-middle big-middle big-middle big-middle"
+    "big-bottom big-bottom big-bottom big-bottom big-bottom";
+    padding: 80px;
+  }
+  
+  .block {
+    height: 100%;
+    width: 100%;
+    border: 1px solid white;
+    background: black;
+    opacity: 0.8;
+    transition: opacity 0.2s ease-out;
+    
+    &:hover {
+      transition: opacity 0.2s ease-in;
+      opacity: 1;
+    }
+  }
+  
+  #b1 {
+    grid-area: big-top;
+
+  }
+  
+  #b2 {
+    grid-area :small-top;
+  }
+  
+  #b3 {
+    grid-area: small-middle;
+  }
+  
+  #b4 {
+    grid-area: big-middle;
+  }
+  
+  
+  .bottom-block {
+    grid-area: big-bottom;
+    display: grid;
+    gap: 12px;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+  }
+  @media only screen and (max-width: 600px) {
+    .bg{
+        .h11,.secp{
+            font-size: 20px;
+        }
+        .firp{
+            font-size: 30px;
+        }
+        .div{
+            padding-top: 100px;
+            padding-left: 50px;
+            height: 500px;
+        }
+    }
+    .ss{
+        h1{
+            font-size: 70px;
+        }
+    }
+    .secdiv{
+        h1{
+            font-size: 60px;
+
+        }
+    }
+    .Partners{
+        margin-right: 100px;
+        img{
+            padding-right: 120px;
+            padding-bottom: 50px;
+        }
+    }
+  }
+  
+  @keyframes fadeIn{
+    0% {opacity: 0; margin: 100px 0px 0px 0px;}
+    100% {opacity: 1; margin: 0px 0px 200px 0px;}
+}
+  

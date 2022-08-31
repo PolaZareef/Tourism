@@ -13,14 +13,19 @@
     background-size: cover;
     object-fit: cover;
     margin-top: 100px;
+    width: 100%;
   }
   .firh1{
     text-align: center;
     height: 700px;
     padding-top: 300px;
-    font-size: 80px;
     color: white;
-    font-weight: bold;
+    h1{
+      animation: fadeIn ease-out 1s;
+      font-size: 80px;
+      font-weight: bold;
+    }
+
   }
   .sec{
     margin-left: 80px;
@@ -88,11 +93,16 @@
     border: 0px;
   }
   .btn:hover{
-    background-color: #fd6d1f;
+    background-color: #ff5900;
+    transform: translateY(1em);
+  transition: 1s;
   }
   @media only screen and (max-width: 600px) {
     .firh1{
+      h1{
         font-size: 50px;
+
+      }
     }
     .img1{
         width: 300px;
@@ -145,3 +155,7 @@
         }
       }
   }
+  @keyframes fadeIn{
+    0% {opacity: 0; margin: 100px 0px 0px 0px;}
+    100% {opacity: 1; margin: 0px 0px 200px 0px;}
+}
