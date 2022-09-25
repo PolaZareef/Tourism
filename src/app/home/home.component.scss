@@ -24,15 +24,19 @@
         font-weight: bold;
     }
   }
+  .imaggrid{
+    width: 100%;
+    height: 100%;
+  }
   .img{
     width: 80%;
   }
   .img:hover{
     cursor: pointer;
   }
-  .ss{
+  .ss,.ss1{
     padding-left: 100px;
-    padding-top: 150px;
+    padding-top: 110px;
     padding-bottom: 100px;
     h1{
         text-align: center;
@@ -46,6 +50,9 @@
         font-size: 40px;
     }
   }
+  .ss1{
+    padding-top: 1100px;
+  }
   .Partners{
     text-align: center;
     img{
@@ -53,7 +60,7 @@
     }
   }
   .all{
-    width: 99%;
+    width: 100%;
   }
   .secdiv{
     h1{
@@ -81,12 +88,12 @@
     width: 100%;
     border: 1px solid white;
     background: black;
-    opacity: 0.8;
+    opacity: 1;
     transition: opacity 0.2s ease-out;
     
     &:hover {
       transition: opacity 0.2s ease-in;
-      opacity: 1;
+      opacity: 0.8;
     }
   }
   
@@ -129,7 +136,10 @@
             height: 500px;
         }
     }
-    .ss{
+    .ss1{
+      padding-top: 90px;
+    }
+    .ss,.ss1{
         h1{
             font-size: 70px;
         }
