@@ -27,27 +27,21 @@
                 </div>
             </div>
             <div class="col-sm-7 seccol">
-                <form action="https://formsubmit.co/polazareef65@gmail.com" method="post">
+                <form #formdata = "ngForm" (submit)="sendEmail(formdata.value)">
                     <div class="form-row">
                       <div class="col-md-4 mb-3">
-                        <label for="validationDefault01">Name</label>
-                        <input type="text" name="name" class="form-control" id="validationDefault01" placeholder="Name..."  required>
+                        <label for="name">Name</label>
+                        <input type="text" name="name"  class="form-control" id="name" placeholder="Name..."  required ngModel>
                       </div>
                       <div class="col-md-4 mb-3">
-                        <label for="validationDefault02">Email</label>
-                        <input type="email" name="email" class="form-control" id="validationDefault02" placeholder="Email..."  required>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" class="form-control" id="email" placeholder="Email..."  required ngModel>
                       </div>
                     </div>
                     <div class="form-row">
                       <div class="col-md-4 mb-3">
-                        <label for="validationDefault03">Destination</label>
-                        <select class="form-control" aria-label="Default select example">
-                            <option selected>Choose One...</option>
-                            <option value="1">Lome</option>
-                            <option value="2">Accra</option>
-                            <option value="3">Lagos</option>
-                            <option value="3">Banjul</option>
-                        </select>                      
+                        <label for="phone">Phone</label>
+                        <input type="number" name="phone" class="form-control" id="phone" placeholder="Phone..."  required ngModel>
                     </div>
                       <div class="col-md-4 mb-3">
                         <label for="validationDefault04">Season</label>
@@ -62,15 +56,24 @@
                     </div>
                     <div class="form-row">
                         <div class="col-md-8 mb-3">
-                          <label for="validationDefault03">Details</label>
-                          <input type="text" class="form-control" id="validationDefault03" placeholder="Questions?..." required>
+                          <label for="message">Message</label>
+                          <input type="text" name="message" class="form-control" id="message" placeholder="Message..." required ngModel>
                         </div>
                       </div>
-                    <button class="btn btn-primary" type="submit">Send</button>
+                    <button class="btn btn-primary" type="submit" value="submit">Send</button>
                   </form>
             </div>
         </div>
     </div>
 </div>
 </div>
+
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("qLNXmxszXVmdPulIi");
+   })();
+</script>
 
