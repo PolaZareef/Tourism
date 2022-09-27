@@ -14,6 +14,11 @@ export class InquiryComponent implements OnInit {
   ngOnInit(): void {
   }
   sendEmail(formdata:any){
+    if(formdata.name===""||formdata.email===""||formdata.phone===""||formdata.message==="")
+    {
+      alert("Please Fill All Data...!");
+      return;
+    }
     var params={
       name:formdata.name,
       email:formdata.email,
